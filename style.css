@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    background: #000 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.swiper-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -50%;
+}
+
+.swiper-slide {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 8em 3em;
+    color: #fff;
+}
+
+.swiper-slide h1 {
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+.swiper-slide h1::before {
+    content: '';
+    width: 50%;
+    height: 40%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    top: 1rem;
+}
+
+.swiper-slide p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.slide1 {
+    background: url(./bg1.jpg);
+}
+.slide1 h1::before {
+    right: 0;
+    border-left: 1px solid #fff;
+}
+
+.slide2 {
+    background: url(./bg2.jpg);
+}
+.slide2 h1::before {
+    left: 0;
+    border-right: 1px solid #fff;
+}
+.slide2 h1::after {
+    content: '';
+    width: 20%;
+    height: 40%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.slide3 {
+    background: url(./bg3.jpg);
+}
+.slide3 h1::before {
+    left: 0;
+    border-right: 1px solid #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 85%;
+    outline: none;
+    color: #fff;
+}
+
+.swiper-button-next {
+    right: 2em;
+}
+
+.swiper-button-prev {
+    left: 2em;
+}
